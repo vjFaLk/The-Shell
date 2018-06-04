@@ -739,32 +739,25 @@ Copyright (c) 2012 Dan Eden
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-@-webkit-keyframes bounceInDown {
-  0% {
+@-webkit-keyframes fadeIn {
+  from {
     opacity: 0;
-    -webkit-transform: translateY(-2000px); }
-  60% {
+  }
+  to {
     opacity: 1;
-    -webkit-transform: translateY(30px); }
-  80% {
-    -webkit-transform: translateY(-10px); }
-  100% {
-    -webkit-transform: translateY(0); } }
-@keyframes bounceInDown {
-  0% {
+  }
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); }
-  60% {
+  }
+  to {
     opacity: 1;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px); }
-  80% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  animation-name: bounceInDown; }
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
